@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 
-{% load staticfiles %}
+<!--
+    load static seems to pass the tests here, not
+    load staticfiles
+-->
+    
+{% load static %}
 
 <html>
     <head>
@@ -17,8 +22,8 @@
 
         <div>
             <a href="/rango/">Index</a><br />
-            <img src="{% static 'images/rango.jpg' %}" alt ="Picture of Rango" />
-            <img src="{{ MEDIA_URL }}cat.jpg" alt ="Picture of a Cat" />
+            <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
         </div>
     </body>
 
