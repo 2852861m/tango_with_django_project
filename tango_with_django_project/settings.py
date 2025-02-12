@@ -138,3 +138,7 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 # Login
 
 LOGIN_URL = 'rango:login'
+
+# Cookies
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
